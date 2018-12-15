@@ -66,18 +66,18 @@ def create_graph():
                 expense_lis_central.append(result_expense)
 
 
-    line_chart = pygal.StackedBar()
+    line_chart = pygal.Bar()
     line_chart.title = 'Summary Income'
-    line_chart.x_label = [2549, 2550, 2552, 2554, 2556, 2558]
+    line_chart.x_labels = [2549, 2550, 2552, 2554, 2556, 2558]
     line_chart.add('ภาคกลาง', [int(i) for i in income_lis_central[1::]])
     line_chart.add('ภาคใต้', [int(i) for i in li_collect_south[1::]])
     line_chart.add('ภาคตะวันออกเฉียงเหนือ', [int(i) for i in li_collect_northeast[1::]])
     line_chart.add('ภาคเหนือ', [int(i) for i in li_collect_north[1::]])
     line_chart.render_to_file('bar_summary_income.svg')
 
-    bar_chart = pygal.StackedBar()
+    bar_chart = pygal.Bar()
     bar_chart.title = 'Summary Expenses'
-    bar_chart.x_label = [2549, 2550, 2552, 2554, 2556, 2558]
+    bar_chart.x_labels = [2549, 2550, 2552, 2554, 2556, 2558]
     bar_chart.add('ภาคกลาง', [int(i) for i in expense_lis_central[1::]])
     bar_chart.add('ภาคใต้', [int(i) for i in li_collect_ex_south[1::]])
     bar_chart.add('ภาคตะวันออกเฉียงเหนือ', [int(i) for i in li_collect_ex_northeast[1::]])
