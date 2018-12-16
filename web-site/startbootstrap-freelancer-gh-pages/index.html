@@ -26,6 +26,29 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blueberry.css" />
+
+    <!-- add -->
+    <style type="text/css">
+    * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    .carousel-control-prev-icon{
+    	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .carousel-control-next-icon{
+    	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+    .carousel-control-prev{
+    	margin-left: -10em;
+    }
+    .carousel-control-next{
+    	margin-right: -10em;
+    }
+    </style>
+    <!-- end -->
 
   </head>
 
@@ -187,11 +210,11 @@
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0"> Faculty of Information Technology
-              <br>King Mongkut's Institute of Technology Ladkrabang</p>
+            <p class="lead mb-0">Faculty of Information Technology
+            <br>King Mongkut's Institute of Technology Ladkrabang, Thailand</p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Tools</h4>
+            <h4 class="text-uppercase mb-4">TOOLS</h4>
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com">
@@ -201,6 +224,11 @@
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                   <i class="fab fa-fw fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fab fa-fw fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
@@ -216,9 +244,10 @@
             </ul>
           </div>
           <div class="col-md-4">
-          <h4 class="text-uppercase mb-4">About Website</h4>
+            <h4 class="text-uppercase mb-4">About Website</h4>
             <p class="lead mb-0">This project is a part of the subject Problem Solving In Information Technology (PSIT) 2018.
               <br><a href="http://www.it.kmitl.ac.th/">Faculty of Information Technology</a></p>
+          </div>
         </div>
       </div>
     </footer>
@@ -250,12 +279,33 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
+              <div id="demo" class="carousel slide" data-ride="carousel">
               <h2 class="text-secondary text-uppercase mb-0">Thailand</h2>
               <hr class="star-dark mb-5">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Income_Thai_Home.svg" alt="">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Minus_Home.svg" alt="">
-              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในประเทศไทย</p>
-              <p class="mb-5">กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในประเทศไทย</p>
+              <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                  	<figure>
+                          <embed type="image/svg+xml" src="project/chart/Income_Thai_Home.svg" />
+                      </figure>
+                  </div>
+                  <div class="carousel-item">
+                  	<figure>
+                          <embed type="image/svg+xml" src="project/chart/Minus_Home.svg" />
+                      </figure>
+                  </div>
+                </div>
+
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในประเทศไทย<br>
+              กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในประเทศไทย</p>
               <p class="mb-5">จากข้อมูลในกราฟ จะเห็นได้ว่ารายได้ของเเต่ละครอบครัวนั้นมีเเน้วโน้ม
                 ที่เพิ่มขึ้นเรื่อยๆ ในขณะเดียวกันรายจ่ายของเเต่ละครอบครัวนั้น เพิ่มขึ้นไปพร้อมกัน
                 เพียงเเต่ มีอัตราการเพิ่มขึ้นที่น้อยกว่ารายได้ ทำให้กราฟที่2มีลักษณะสูงขึ้นอย่างต่อเนื่อง เเต่ในช่วงปี2556-2558 ประเทศไทยเกิดปัญหาภายใน
@@ -265,6 +315,7 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close</a>
+              </div>
             </div>
           </div>
         </div>
@@ -280,12 +331,32 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
+              <div id="demo" class="carousel slide" data-ride="carousel">
               <h2 class="text-secondary text-uppercase mb-0">Central Thailand</h2>
               <hr class="star-dark mb-5">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Income_Central.svg" alt="">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Minus_Central.svg" alt="">
-              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคกลางของประเทศไทย</p>
-              <p class="mb-5">กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคกลางของประเทศไทย</p>
+              <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Income_Central.svg" />
+                      </figure>
+                  </div>
+                  <div class="carousel-item">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Minus_Central.svg" />
+                      </figure>
+                  </div>
+                </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคกลางของประเทศไทย<br>
+              กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคกลางของประเทศไทย</p>
               <p class="mb-5">จากข้อมูลในกราฟ กราฟที่เเสดงรายได้นั้นเเสดงให้เห็นว่ารายได้ของเเต่ละครอบครัว
               นั้นเพิ่มสูงขึ้นอย่างต่อเนื่อง โดยเฉพาะในช่วงปี2554-2556มีอัตราการเพิ่มขึ้นของรายได้ที่มากกว่าปรกติ
               เนื่องจากรัฐบาลมีการออกนโยบายต่างๆ ที่ส่งผลให้เศรษฐกิจขยายตัวอย่างรวดเร็ว เเละหลังจากช่วงปีดังกล่าวเเล้วเศรษฐกิจ กลับเข้าสู่ภาวะปรกติ ทำให้รายได้ของเเต่ละครอบครัวปรับตัวขึ้นเล็กน้อยหรืออยู่ในระดับคงที่</p>
@@ -307,12 +378,32 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
+              <div id="demo" class="carousel slide" data-ride="carousel">
               <h2 class="text-secondary text-uppercase mb-0">Northern Thailand</h2>
               <hr class="star-dark mb-5">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Income_Northern_Region.svg" alt="">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Minus_North.svg" alt="">
-              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคเหนือของประเทศไทย</p>
-              <p class="mb-5">กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคเหนือของประเทศไทย</p>
+              <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Income_Northern_Region.svg" />
+                      </figure>
+                  </div>
+                  <div class="carousel-item">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Minus_North.svg" />
+                      </figure>
+                  </div>
+                </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+              </div>
+              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคเหนือของประเทศไทย<br>
+              กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคเหนือของประเทศไทย</p>
               <p class="mb-5">จากข้อมูลในกราฟ กราฟที่เเสดงรายได้นั้นเเสดงให้เห็นว่ารายได้ของเเต่ละครอบครัว
               นั้นเพิ่มสูงขึ้นอย่างต่อเนื่อง โดยเฉพาะในช่วงปี2554-2556มีอัตราการเพิ่มขึ้นของรายได้ที่มากกว่าปรกติ
               เนื่องจากรัฐบาลมีการออกนโยบายต่างๆ ที่ส่งผลให้เศรษฐกิจขยายตัวอย่างรวดเร็ว เเละหลังจากช่วงปีดังกล่าวเเล้วเศรษฐกิจ กลับเข้าสู่ภาวะปรกติ ทำให้รายได้ของเเต่ละครอบครัวปรับตัวขึ้นเล็กน้อยหรืออยู่ในระดับคงที่</p>
@@ -334,12 +425,32 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
+              <div id="demo" class="carousel slide" data-ride="carousel">
               <h2 class="text-secondary text-uppercase mb-0">Northeastern Thailand</h2>
               <hr class="star-dark mb-5">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Income_Northeastern.svg" alt="">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Minus_Northeast.svg" alt="">
-              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคตะวันออกเฉียงเหนือของประเทศไทย</p>
-              <p class="mb-5">กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคตะวันออกเฉียงเหนือของประเทศไทย</p>
+              <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Income_Northeastern.svg" />
+                      </figure>
+                  </div>
+                  <div class="carousel-item">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Minus_Northeast.svg" />
+                      </figure>
+                  </div>
+                </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+              </div>
+              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคตะวันออกเฉียงเหนือของประเทศไทย
+              <br>กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคตะวันออกเฉียงเหนือของประเทศไทย</p>
               <p class="mb-5">จากข้อมูลในกราฟ กราฟที่เเสดงรายได้นั้นเเสดงให้เห็นว่ารายได้ของเเต่ละครอบครัว
               นั้นเพิ่มสูงขึ้นอย่างต่อเนื่อง โดยเฉพาะในช่วงปี2554-2556มีอัตราการเพิ่มขึ้นของรายได้ที่มากกว่าปรกติ
               เนื่องจากรัฐบาลมีการออกนโยบายต่างๆ ที่ส่งผลให้เศรษฐกิจขยายตัวอย่างรวดเร็ว เเละหลังจากช่วงปีดังกล่าวเเล้วเศรษฐกิจ กลับเข้าสู่ภาวะปรกติ ทำให้รายได้ของเเต่ละครอบครัวปรับตัวขึ้นเล็กน้อยหรืออยู่ในระดับคงที่</p>
@@ -361,12 +472,32 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
+              <div id="demo" class="carousel slide" data-ride="carousel">
               <h2 class="text-secondary text-uppercase mb-0">Southern Thailand</h2>
               <hr class="star-dark mb-5">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Income_South.svg" alt="">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/Minus_South.svg" alt="">
-              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคใต้ของประเทศไทย</p>
-              <p class="mb-5">กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคใต้ของประเทศไทย</p>
+              <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Income_South.svg" />
+                      </figure>
+                  </div>
+                  <div class="carousel-item">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/Minus_South.svg" />
+                      </figure>
+                  </div>
+                </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+              </div>
+              <p class="mb-5">กราฟที่1 แสดงให้เห็นภาพรวมรายได้และรายจ่ายของครอบครัวในภาคใต้ของประเทศไทย
+              <br>กราฟที่2 แสดงให้เห็นถึงยอดสุทธิของครอบครัวในภาคใต้ของประเทศไทย</p>
               <p class="mb-5">จากข้อมูลในกราฟ เเสดงรายได้นั้นเเสดงให้เห็นว่ารายได้ของเเต่ละครอบครัว
               นั้นเพิ่มสูงขึ้นอย่างต่อเนื่อง โดยเฉพาะในช่วงปี2554-2556มีอัตราการเพิ่มขึ้นของรายได้ที่มากกว่าปรกติ
               เนื่องจากรัฐบาลมีการออกนโยบายต่างๆ ที่ส่งผลให้เศรษฐกิจขยายตัวอย่างรวดเร็ว เเละหลังจากช่วงปีดังกล่าวเเล้วเศรษฐกิจ กลับเข้าสู่ภาวะปรกติ ทำให้รายได้ของเเต่ละครอบครัวปรับตัวขึ้นเล็กน้อยหรืออยู่ในระดับคงที่</p>
@@ -388,12 +519,32 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
+              <div id="demo" class="carousel slide" data-ride="carousel">
               <h2 class="text-secondary text-uppercase mb-0">Summary</h2>
               <hr class="star-dark mb-5">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/bar_summary_income.svg" alt="">
-              <embed class="img-fluid mb-5" type="image/svg+xml" src="project/chart/bar_summary_expense.svg" alt="">
-              <p class="mb-5">กราฟที่1 เปรียบเทียบรายได้ของเเต่ละครอบครัวเเต่ละกลุ่มในช่วงปี 2549-2558</p>
-              <p class="mb-5">กราฟที่2 เปรียบเทียบรายจ่ายของเเต่ละครอบครัวเเต่ละกลุ่มในช่วงปี 2549-2558</p>
+              <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/bar_summary_income.svg" />
+                      </figure>
+                  </div>
+                  <div class="carousel-item">
+                    <figure>
+                          <embed type="image/svg+xml" src="project/chart/bar_summary_expense.svg" />
+                      </figure>
+                  </div>
+                </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+              </div>
+              <p class="mb-5">กราฟที่1 เปรียบเทียบรายได้ของเเต่ละครอบครัวเเต่ละกลุ่มในช่วงปี 2549-2558
+              <br>กราฟที่2 เปรียบเทียบรายจ่ายของเเต่ละครอบครัวเเต่ละกลุ่มในช่วงปี 2549-2558</p>
               <p class="mb-5">จากข้อมูลในกราฟ เเสดงให้เห็นถึงรายได้เเละรายจ่ายของเเต่ละครอบครัวในเเต่ละภาคเเสดงให้เห็น
               ว่าเเต่ละครอบครัวนั้นมีรายได้เพิ่มสูงขึ้นอย่างต่อเนื่องเเละเพิ่มขึ้นสูงมากที่สุดในช่วงปี2554-2556
               จากการสืบค้นข้อมูลทำให้พบว่าว่าหลังจากน้ำท่วมครั้งใหญ่ในปี2554 รัฐบาลได้มีการวางนโยบายต่างๆเพื่อกระตุ้น
